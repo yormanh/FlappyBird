@@ -23,7 +23,7 @@ public class Pipe : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log("Muerte");
+        //Debug.Log("Muerte");
 
         Bird lBird = collision.transform.GetComponent<Bird>();
         if (lBird)
@@ -33,7 +33,7 @@ public class Pipe : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("Sumar puntación");
+        //Debug.Log("Sumar puntación");
         Bird lBird = collision.transform.GetComponent<Bird>();
         if (lBird)
             lBird.AddScore(1);

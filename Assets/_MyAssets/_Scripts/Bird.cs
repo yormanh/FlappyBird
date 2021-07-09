@@ -10,6 +10,7 @@ public class Bird : MonoBehaviour
     [Header("References")]
     [SerializeField] TextMeshProUGUI mScoreLabel;
     [SerializeField] PlayerInput mPlayerInput;
+    [SerializeField] GameObject mImageGameOver;
 
 
     [Header("Values")]
@@ -79,6 +80,8 @@ public class Bird : MonoBehaviour
         Background[] laBackground = GameObject.FindObjectsOfType<Background>();
         for (int i = 0; i < laBackground.Length; i++)
             laBackground[i].mfMoveSpeed = 0;
+
+        mImageGameOver.gameObject.SetActive(true);
 
     }
 
