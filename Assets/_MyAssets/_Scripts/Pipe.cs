@@ -16,6 +16,9 @@ public class Pipe : MonoBehaviour
     void Update()
     {
         transform.Translate(-Vector2.right * Time.deltaTime * mfVelocity);
+
+        if (transform.position.x < -15)
+            Destroy(gameObject);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

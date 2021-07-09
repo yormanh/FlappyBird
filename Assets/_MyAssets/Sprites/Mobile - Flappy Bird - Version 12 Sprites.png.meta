@@ -4,7 +4,7 @@ TextureImporter:
   internalIDToNameTable:
   - first:
       213: 5003628964238269105
-    second: Mobile - Flappy Bird - Version 12 Sprites_0
+    second: Background
   - first:
       213: -221491057933239876
     second: Mobile - Flappy Bird - Version 12 Sprites_1
@@ -346,7 +346,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Mobile - Flappy Bird - Version 12 Sprites_0
+      name: Background
       rect:
         serializedVersion: 2
         x: 0

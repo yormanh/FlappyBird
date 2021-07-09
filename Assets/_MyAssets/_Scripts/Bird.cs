@@ -76,6 +76,10 @@ public class Bird : MonoBehaviour
             laPipes[i].mfVelocity = 0;
 
 
+        Background[] laBackground = GameObject.FindObjectsOfType<Background>();
+        for (int i = 0; i < laBackground.Length; i++)
+            laBackground[i].mfMoveSpeed = 0;
+
     }
 
 }
