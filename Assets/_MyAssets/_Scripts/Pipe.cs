@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Pipe : MonoBehaviour
 {
-    [SerializeField] float mfVelocity = 5f;
+    [SerializeField] public float mfVelocity = 5f;
 
     // Start is called before the first frame update
     void Start()
@@ -21,11 +21,19 @@ public class Pipe : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         Debug.Log("Muerte");
+
+        Bird lBird = collision.transform.GetComponent<Bird>();
+        if (lBird)
+            lBird.Kill();
     }
 
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         Debug.Log("Sumar puntación");
+        Bird lBird = collision.transform.GetComponent<Bird>();
+        if (lBird)
+            lBird.AddScore(1);
+
     }
 }
